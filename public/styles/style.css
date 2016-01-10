@@ -70,6 +70,11 @@ i{
   animation: fadeIn 1s ease-in forwards;
 }
 
+.add{
+  width: 75%;
+  margin: 0 auto;
+}
+
 a, a:hover, a:active, a:visited{
   color: white;
   text-decoration: none;

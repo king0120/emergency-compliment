@@ -18,18 +18,21 @@
   .centerer
     %a{:href => ".", :class => "center"} again!
     %a{:href => "#", :class => "center js-btn"} add?
-  .add.col-md-offset-2.js-fade
+  .add.center-block
     %h3 Add your own compliment or color:
     %form{:action => "/", :method => 'POST', :class => 'form-horizontal'}
+      .col-sm-2
       %label{:for => "new_compliment", :class => 'col-sm-2 control-label'}New Compliment
       .col-sm-5
         %input{:type => "text", :name=>'new_compliment', :class => 'form-control'}
       %br/
       %br/
+      .col-sm-2
       %label{:for => "new_background", :class => 'col-sm-2 control-label'}New Background
       .col-sm-5
         %input{:type => "text", :name=>'new_background', :class => 'form-control'}
       %br/
       %br/
-      .col-sm-offset-2.col-sm-10
+      .col-sm-2
+      .col-sm-offset-4.col-sm-10
         %input{:type => "submit", :class => 'btn btn-default'}
